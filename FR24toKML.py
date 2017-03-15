@@ -20,6 +20,7 @@ def createKML(name, csvDirectory):
         
         for file in os.listdir(csvDirectory):
                 if file.endswith('.csv'):
+                        print(file)
                         kmlText += parseFile(csvDirectory + file)
 
         kmlText += '</Document>\n</kml>'
